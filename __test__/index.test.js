@@ -43,4 +43,7 @@ describe("/users", () => {
 			})
 		expect(res.statusCode).toBe(200)
 	})
+	afterAll((done) => {
+		done()
+	})
 })

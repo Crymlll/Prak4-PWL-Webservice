@@ -7,7 +7,7 @@
 	"scripts": {
 		"start": "nodemon index.js",
 		"dev": "nodemon index.js",
-		"test": "jest --watchAll",
+		"test": "jest --runInBand --forceExit",
 		"auliarz": "env-cmd -f ./config/dev.env nodemon index.js",
 		"test2": "echo \"Error: no test specified\" && exit 1"
 	},
