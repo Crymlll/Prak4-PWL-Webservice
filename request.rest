@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+
+
+###
+GET http://localhost:5000/users/627737e9f6518226cc33093d
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nama": "Anonymous",
+    "email": "auliarz@gmail.com",
+    "komentar": "Wibu banget sih bang",
+    "date": "2022-04-19T09:11:16.046Z"
+}
+
+###
+PATCH  http://localhost:5000/users/625d661aba42d1acfecffa15
+Content-Type: application/json
+
+{
+    "name": "Aulia Rahma Zulfa",
+    "email": "aul@gmail.com",
+    "komentar": "keren banget bg",
+    "date": "2022-04-19T09:11:16.046Z"
+}
+
+###
+DELETE   http://localhost:5000/users/625d75f8ba7f0013f556340a

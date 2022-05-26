@@ -1,0 +1,29 @@
+GET http://localhost:5000/blog
+
+
+###
+GET http://localhost:5000/blog/627db8181336bf6522271ce6
+
+
+###
+POST http://localhost:5000/blog
+Content-Type: application/json
+
+{
+    "judul": "Cara Makan Bubur Menggunakan Sumpit",
+    "isi": "Saya sedang mencoba membuat bubur dengan sumpit. Saya memiliki sumpit yang dapat digunakan untuk memakan bubur",
+    "date": "2022-05-19T09:11:16.046Z"
+}
+
+###
+PATCH  http://localhost:5000/blog/627db8181336bf6522271ce6
+Content-Type: application/json
+
+{
+    "judul": "Cara Membuat Website Simple Dengan React JS",
+    "isi": "Caranya mudah, dengan hanya mengimport React dan ReactDOM dan menampilkan data dengan React.createElement()",
+    "date": "2022-04-19T09:11:16.046Z"
+}
+
+###
+DELETE   http://localhost:5000/blog/625d75f8ba7f0013f556340a

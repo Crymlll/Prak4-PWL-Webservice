@@ -1,0 +1,33 @@
+{
+	"name": "porto-auliarz",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "commonjs",
+	"scripts": {
+		"start": "nodemon index.js",
+		"dev": "env-cmd -f ./config/dev.env nodemon index.js",
+		"test": "env-cmd -f ./config/test.env jest --watchAll",
+		"auliarz": "env-cmd -f ./config/dev.env nodemon index.js",
+		"test2": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Crymlll/Prak4-PWL-Webservice.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Crymlll/Prak4-PWL-Webservice/issues"
+	},
+	"homepage": "https://github.com/Crymlll/Prak4-PWL-Webservice#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"env-cmd": "^10.1.0",
+		"express": "^4.17.3",
+		"jest": "^28.1.0",
+		"mongoose": "^6.3.0",
+		"nodemon": "^2.0.16",
+		"supertest": "^6.2.3"
+	}
+}
